@@ -1,6 +1,6 @@
-#HowTo
+# HowTo
 
-##The Function
+## The Function
 
 <pre>
  public function preparePrintBefore($id) {
@@ -31,7 +31,7 @@
   }
 </pre>
 
-##Magento - Stuff
+## Magento - Stuff
 
 getModel()
 
@@ -47,18 +47,18 @@ getGLSService()
 
 importValues()
 
-##Private - Function
+## Private - Function
 
 parseIncomingTag()
 
-##Duplicates
+## Duplicates
 
 <pre>
 $returnedtag = Mage::getModel('glsbox/shipment')->getCollection()->addFieldToFilter('id', $id)->getFirstItem()->getGlsMessage();
 $service = Mage::getModel('glsbox/shipment')->getCollection()->addFieldToFilter('id', $id)->getFirstItem()->getService();
 </pre>
 
-##Refactoring and Testing
+## Refactoring and Testing
 
 Validate the input id value type - int 
 Validate the tags value type - array()
